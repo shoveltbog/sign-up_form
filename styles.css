@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 #container {
     display: flex;
@@ -8,7 +12,6 @@
 #leftCont {
     display: flex;
     flex-direction: column;
-    border: 2px black solid;
     flex: 1;
     background-image: url('images/footballpitch.jpg');
     background-size: cover;
@@ -20,13 +23,21 @@
 #leftTop {
     display: flex;
     flex: 1;
-    justify-content: center;
     align-items: flex-end;
 }
 
 #nameBox {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.7;
+    height: 120px;
+    width: 100%; 
+}
+
+#nameBox > div {
+    margin: 0 10px;
 }
 
 #leftBottom {
@@ -39,12 +50,12 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin-bottom: 10px;
 }
 
 #rightCont {
     display: flex;
     flex-direction: column;
-    border: 2px black solid;
     flex: 2;
 }
 
@@ -54,18 +65,62 @@
     flex: 1;
 }
 
+#rightHead {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.textCont {
+    margin-bottom: 40px;
+    width: 80%;
+}
+
+.text {
+    margin-left: 40px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
 #rightBody {
     box-shadow: 0px 5px 15px grey;
 }
 
-#registration_form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#formCont {
+    margin-left: 40px;
+    color: #444444;
 }
 
-fieldset {
-    border: none;
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between groups */
+    margin-bottom: 10px; /* Add margin between rows */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    flex: 0 0 calc(50% - 10px); /* Each group occupies 50% of the row width with some margin */
+}
+
+label {
+    font-size: 12px;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    max-width: 200px;
 }
 
 input[type="email"]:invalid,
@@ -81,6 +136,31 @@ input[type="tel"]:invalid {
     color: red;
 }
 
+#login {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 40px;
+}
 
+#login > button {
+    margin: 0px 5px;
+    color: #48BA00;
+    font-style: bold;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
 
+#registration_form button[type="submit"] {
+    position: absolute;
+    right: 755px;
+    bottom: 160px;
+    background-color: #48BA00;
+    border-radius: 3px;
+    color: white;
+    border-color: #48BA00;
+    padding: 15px 30px;
+    font-weight: bold;
 
+}
