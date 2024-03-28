@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="container">
@@ -27,20 +28,25 @@
             </div>
             <div id="rightBody">
                 <div id="formCont">
-                    <form action="example.com/path" method="post">
+                    <form id="registration_form" action="example.com/path" method="post">
                         <legend>Let's do this!</legend>
-                        <label for="first_name">First Name:</label>
-                        <input type="text" id="first_name">
-                        <label for="last_name">Last Name:</label>
-                        <input type="text" id="last_name">
-                        <label for="user_email">Email Address:</label>
-                        <input type="email" id="user_email" name="email" placeholder="you@example.com">
-                        <label for="phone_number">Phone Number:</label>
-                        <input type="tel" id="phone_number" name="phone_number">
-                        <label for="user_password">Password:</label>
-                        <input type="password" id="user_password" name="password" required>
-                        <label for="confirm_password">Confirm Password:</label>
-                        <input type="password" id="confirm_password" name="password_confirm" required>
+                        <fieldset><label for="first_name">First Name:</label>
+                            <input type="text" id="first_name">
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name">
+                        </fieldset>
+                        <fieldset>
+                            <label for="user_email">Email Address:</label>
+                            <input type="email" id="user_email" name="email" placeholder="you@example.com">
+                            <label for="phone_number">Phone Number:</label>
+                            <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]+" title="Please enter only numbers">
+                        </fieldset>
+                        <fieldset>
+                            <label for="user_password">Password:</label>
+                            <input type="password" id="user_password" name="password" required>
+                            <label for="confirm_password">Confirm Password:</label>
+                            <input type="password" id="confirm_password" name="password_confirm" required>
+                        </fieldset>
                         <button type="submit">Create Account</button>
                     </form>
                 </div>
