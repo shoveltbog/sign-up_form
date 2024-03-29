@@ -138,7 +138,7 @@ input[type="tel"]:invalid {
 
 #login {
     display: flex;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-left: 40px;
 }
 
@@ -152,10 +152,9 @@ input[type="tel"]:invalid {
     font-weight: bold;
 }
 
-#registration_form button[type="submit"] {
-    position: absolute;
-    right: 755px;
-    bottom: 160px;
+#rightFooter > button {
+    margin-left: 40px;
+    margin-top: 30px;
     background-color: #48BA00;
     border-radius: 3px;
     color: white;
@@ -168,4 +167,11 @@ img {
     max-width: 100%;
     max-height: 80%;
     height: auto;
+}
+
+#name {
+    font-family: "Indie Flower", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 40px;
 }
