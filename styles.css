@@ -3,6 +3,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 #container {
     display: flex;
     width: 100%;
@@ -30,10 +34,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.956);
     opacity: 0.7;
     height: 120px;
     width: 100%; 
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
 }
 
 #nameBox > div {
@@ -100,8 +106,8 @@ legend {
 
 .form-row {
     display: flex;
-    justify-content: space-between; /* Ensure equal spacing between groups */
-    margin-bottom: 10px; /* Add margin between rows */
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .form-group {
@@ -174,4 +180,8 @@ img {
     font-weight: 1000;
     font-style: normal;
     font-size: 40px;
+}
+
+a {
+    color: white;
 }
